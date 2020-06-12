@@ -10,11 +10,12 @@ export default function Income() {
         <div className="income">
             <div>
                 <h1 className="inc">Income:</h1>
-                <p className="size"><span className="sp">+$</span>{income}</p>
+                <p className="size"><span className="sp">$+</span>{income}</p>
             </div>
+            <br />
             <div>
                 <h1 className="exp">Expense:</h1>
-                <p className="size"><span className="sp">-$</span>{expense}</p>
+                <p className="size"><span className="sp">$</span>{expense}</p>
             </div>
         </div>
     )

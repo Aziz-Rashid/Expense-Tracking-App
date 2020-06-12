@@ -1,7 +1,10 @@
 .income{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     font-style: italic;
+    overflow: hidden;
+    width: 50%;
+    margin: auto;
 }
 .inc{
     color: green;
@@ -12,9 +15,9 @@
     border-bottom: 3px solid red;
 }
 .size{
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 500;
 }
 .sp{
-    font-size: 45px;
+    font-size: 35px;
 }
