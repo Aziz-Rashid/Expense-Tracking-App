@@ -1,21 +1,25 @@
 .income{
-    display: flex;
-    justify-content: space-evenly;
+    display: block;
+    justify-content: space-between;
     font-style: italic;
     width: 50%;
     margin: auto;
+    margin-bottom: 40px;
+    margin-top: 50px;
 }
 .inc{
     color: green;
     border-bottom: 3px solid green;
+    /* text-align: center; */
 }
 .exp{
     color: red;
     border-bottom: 3px solid red;
+    /* text-align: center; */
 }
 .size{
     font-size: 25px;
-    font-weight: 300;
+    font-weight: bolder;
 }
 .sp{
     font-size: 35px;
