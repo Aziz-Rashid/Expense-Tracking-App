@@ -10,7 +10,7 @@ export default function History() {
             {transactions.map((transaction,id) =>(
                 <div key={id} className="history">
                     <p className="his">{transaction.text}</p>
-                    <p className="his"> ${Math.abs(transaction.amount)}</p>
+                    <p className="his new"> ${Math.abs(transaction.amount)}</p>
                     <button className="btn" onClick={() => deletetransitions(transaction.id)}>Delete</button>
                 </div>
             ))}

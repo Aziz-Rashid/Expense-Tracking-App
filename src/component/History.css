@@ -5,6 +5,7 @@
     width: 50%;
     border-bottom: 2px solid gray;
     margin: auto;
+    display: block;
 }
 .history{
     text-align: center;
@@ -16,6 +17,8 @@
     width: 50%;
     margin: auto;
     margin-top: 20px;
+    /* display: block; */
+
 }
 .btn{
     display: flex;
@@ -24,7 +27,14 @@
     margin-bottom: 20px;
     padding-left: 5px;
     font-weight: bold;
+    /* display: block  ; */
 }
 .his{
     font-size: 20px;
+}
+.new{
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    display: flex;
 }
