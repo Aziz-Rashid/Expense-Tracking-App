@@ -1,0 +1,20 @@
+.income{
+    display: flex;
+    justify-content: space-evenly;
+    font-style: italic;
+}
+.inc{
+    color: green;
+    border-bottom: 3px solid green;
+}
+.exp{
+    color: red;
+    border-bottom: 3px solid red;
+}
+.size{
+    font-size: 35px;
+    font-weight: 500;
+}
+.sp{
+    font-size: 45px;
+}

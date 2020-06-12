@@ -1,0 +1,9 @@
+.heading{
+   text-align: center;
+   font-size: 30px;
+   text-shadow: 2px 2px 2px black;
+   font-weight: 20;
+}
+.heading h1{
+   font-weight: 100;
+}

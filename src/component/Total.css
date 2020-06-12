@@ -1,0 +1,10 @@
+.total{
+    text-align: center;
+    background-color: rgb(243, 240, 235);
+    width: 50%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-style: italic;
+    border-radius: 10px;
+}
