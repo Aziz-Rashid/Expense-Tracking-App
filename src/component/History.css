@@ -13,14 +13,15 @@
 }
 .btn{
     box-sizing: border-box;
-    visibility: hidden;
-    width: 50px;
+    /* visibility: hidden; */
+    width: 60px;
     height: 30px;
     margin-bottom: 20px;
     background-color: red;
     font-size: 20px;
     color: white;
     border-radius: 5px;
+    
    
 }
 .history{
@@ -35,9 +36,9 @@
     margin-top: 20px;
     /* display: block; */
 }
-.q :hover .btn{
+/* .q :hover .btn{
     visibility: visible;
-}
+} */
 .his{
     font-size: 20px;
 }
