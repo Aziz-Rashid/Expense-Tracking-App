@@ -1,3 +1,6 @@
+.q{
+    margin-top: 30px;
+}
 .para{
     text-align: center;
     margin-top: 30px;
@@ -6,6 +9,19 @@
     border-bottom: 2px solid gray;
     margin: auto;
     display: block;
+    margin-bottom: 20px;
+}
+.btn{
+    box-sizing: border-box;
+    visibility: hidden;
+    width: 50px;
+    height: 30px;
+    margin-bottom: 20px;
+    background-color: red;
+    font-size: 20px;
+    color: white;
+    border-radius: 5px;
+   
 }
 .history{
     text-align: center;
@@ -18,16 +34,9 @@
     margin: auto;
     margin-top: 20px;
     /* display: block; */
-
 }
-.btn{
-    display: flex;
-    justify-content: space-around;
-    width: 50px;
-    margin-bottom: 20px;
-    padding-left: 5px;
-    font-weight: bold;
-    /* display: block  ; */
+.q :hover .btn{
+    visibility: visible;
 }
 .his{
     font-size: 20px;
@@ -38,3 +47,16 @@
     justify-content: center;
     display: flex;
 }
+.head{
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 10px;
+        border-bottom: 2px solid gray;
+        width: 50%;
+        margin: auto;
+        margin-top: 50px;
+        /* display: block; */
+    }

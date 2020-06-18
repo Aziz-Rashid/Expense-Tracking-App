@@ -1,3 +1,4 @@
+
 .inp{
     text-align: center;
     justify-content: center;
@@ -20,16 +21,46 @@
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
-.submit{
-    width: 50%;
-    margin: auto;
+/* .submit{
+    /* width: 50%; */
+/*     
     display: flex;
     justify-content: center;
-    height: 30px;
+    height: 40px;
     border-radius: 5px;
     background-color: gray;
     font-size: 20px;
     color: white;
     outline: none;
     margin-bottom: 50px;
+    margin-left: 25px;
+    width: 100%;
+    margin: auto; */
+.y{
+    display: flex;
+    justify-content: space-evenly;
+    /* margin: auto; */
+    /* height: 50px; */
+    width: 50%;
+    margin: auto;
+    
+}
+.red{
+    background-color: red;
+    color: white;
+    /* width: 150px; */
+    height: 35px;
+    border-radius: 5px;
+}
+.green{
+    background-color: green;
+    color: white;
+    /* width: 150px; */
+    height: 35px;
+    border-radius: 5px;
+    /* padding-right: 50px; */
+}
+.w{
+    margin-top: 50px;
+    margin-bottom: 20px;
 }
