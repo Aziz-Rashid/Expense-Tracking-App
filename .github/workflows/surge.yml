@@ -1,5 +1,3 @@
-# This is a basic workflow to help you get started with Actions
-
 name: Deploying app on surge
 
 # Controls when the action will run. Triggers the workflow on push or pull request
@@ -38,4 +36,4 @@ jobs:
     - name: install surge
       run: npm install --global surge
     - name: deploying app on surge 
-      run: surge ./build expense-app.surge.sh --token ${{secrets.TOKEN}}
+      run: surge ./build shopcart-app.surge.sh --token ${{secrets.Aziz}}
