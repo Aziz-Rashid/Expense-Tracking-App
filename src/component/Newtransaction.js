@@ -3,7 +3,7 @@ import { GlobalContext } from '../context/Globalstate'
 import './Newtransaction.css'
 export default function Addnewtransaction() {
     let [text, settext] = useState("")
-    let [amount, setamount] = useState()
+    let [amount, setamount] = useState(0)
     let { rem, addtransactions } = useContext(GlobalContext)
 
 
@@ -23,27 +23,34 @@ export default function Addnewtransaction() {
     }
     const handler = (e) => {
         e.preventDefault();
-        rem(addexpensee);
-        settext("");
-        setamount("")
+        if(amount.length > 2){
+            rem(addexpensee);
+            settext("");
+            setamount("")
+
+        }
     }
     const changedhandler = (e) => {
         e.preventDefault();
-        addtransactions(addincomee);
-        settext("");
-        setamount("")
+        if(text.length > 2){
+         addtransactions(addincomee); 
+         settext("");
+         setamount("") 
+        }
+        
+       
     }
     return (
         <div className="header">
             <div>
                 <p className="transaction-historyy">Add new transactions</p>
             </div>
-            <form onsubmit={submit}>
+            <form onSubmit={submit}>
                 <div>
-                    <input className="input" type="text" value={text} onChange={e => settext(e.target.value)} placeholder="Enter your text here..." />
+                    <input  className="input"  type="text" value={text} onChange={e => settext(e.target.value)} placeholder="Enter your text here..." minLength={1}/>
                 </div>
                 <div >
-                    <input type="number" className="input" value={amount} onChange={e => setamount(e.target.value)} placeholder="Enter your Amount here..." />
+                    <input type="number"   className="input" value={amount} onChange={e => setamount(e.target.value)} placeholder="Enter your Amount here..." minLength={1} />
                 </div>
                 <div >
                     <div className="btns" >
