@@ -3,7 +3,7 @@ import './Header.css'
 export default function Header() {
     return (
         <div className="heading">
-            <h1><i>Expense Tracker App</i></h1>
+            <h2><i>Expense Tracker!</i></h2>
         </div>
     )
 }

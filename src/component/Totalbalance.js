@@ -8,8 +8,8 @@ export default function Totalbalance() {
     return (
         <div>
             <div className="total">
-                <h1>Total Balance:</h1>
-                <p className="size"><span className="sp">$</span>{total}</p>
+                <p className="balance">Balance:</p>
+                <p className={total > 0 ? 'balance-total':'balance-total2' }><span>$</span>{total}</p>
             </div>
         </div>
     )

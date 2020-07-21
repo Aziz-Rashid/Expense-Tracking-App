@@ -5,11 +5,11 @@ export default function Addnewtransaction() {
     let [text, settext] = useState("")
     let [amount, setamount] = useState()
     let { rem, addtransactions } = useContext(GlobalContext)
-    
+
 
     const submit = e => {
         e.preventDefault()
-        
+
     }
     const addincomee = {
         id: Math.floor(Math.random() * 10000),
@@ -21,37 +21,36 @@ export default function Addnewtransaction() {
         text,
         amount: -amount
     }
-    const handler = (e)=>{
+    const handler = (e) => {
         e.preventDefault();
         rem(addexpensee);
         settext("");
         setamount("")
     }
-    const changedhandler = (e)=>{
+    const changedhandler = (e) => {
         e.preventDefault();
         addtransactions(addincomee);
-            settext("");
-            setamount("")
+        settext("");
+        setamount("")
     }
     return (
-        <div>
-            <div className="w">
-                <p className="heading">Add new transactions</p>
+        <div className="header">
+            <div>
+                <p className="transaction-historyy">Add new transactions</p>
             </div>
             <form onsubmit={submit}>
-                <div className="inp">
-                    <p className="text">Text:</p>
-                    <input className="input" id="news" type="text" value={text} onChange={e => settext(e.target.value)} placeholder="Enter your text here..." />
+                <div>
+                    <input className="input" type="text" value={text} onChange={e => settext(e.target.value)} placeholder="Enter your text here..." />
                 </div>
-                <div className="inp">
-                    <p className="text">Amount:</p>
-                    <input className="input" type="number" value={amount} onChange={e => setamount(e.target.value)} placeholder="Enter your Amount here..." />
-                </div>
-                <div className="y">
                 <div >
-                    <input className="submit green" onsubmit={submit} onClick={changedhandler} type="submit" value="Add income" />
+                    <input type="number" className="input" value={amount} onChange={e => setamount(e.target.value)} placeholder="Enter your Amount here..." />
                 </div>
-                <div><input className="submit red" onClick={handler} type="submit"  value="Add expense" /></div></div>
+                <div >
+                    <div className="btns" >
+                        <div><input className="bt g" onSubmit={submit} onClick={changedhandler} type="submit" value="Add income" /></div>
+                       <div><input  className="bt r" onClick={handler} type="submit" value="Add expense" /></div>
+                    </div>
+                 </div>
             </form>
         </div>
     )

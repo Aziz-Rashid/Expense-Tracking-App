@@ -1,63 +1,29 @@
-.q{
-    margin-top: 30px;
-}
-.para{
-    text-align: center;
-    margin-top: 30px;
-    font-size: 35px;
-    width: 50%;
-    border-bottom: 2px solid gray;
-    margin: auto;
-    display: block;
-    margin-bottom: 20px;
-}
-.btn{
-    box-sizing: border-box;
-    /* visibility: hidden; */
-    width: 40px;
-    height: 30px;
-    margin-bottom: 20px;
-    background-color: gray;
-    font-size: 20px;
-    color: white;
-    border-radius: 100%;
-    
-   
-}
-.history{
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    font-size: 35px;
-    margin-top: 10px;
-    border-bottom: 2px solid gray;
-    width: 50%;
-    margin: auto;
-    margin-top: 20px;
-    /* display: block; */
-}
-/* .q :hover .btn{
-    visibility: visible;
-} */
-.his{
-    font-size: 20px;
-}
-.new{
-    text-align: center;
-    width: 100%;
-    justify-content: center;
-    display: flex;
-}
-.head{
-        text-align: center;
-        display: flex;
-        justify-content: space-between;
-        font-size: 20px;
-        font-weight: bold;
-        margin-top: 10px;
-        border-bottom: 2px solid gray;
-        width: 50%;
+.transaction-historyy{
+        width: 90%;
         margin: auto;
-        margin-top: 50px;
-        /* display: block; */
-    }
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-bottom: 2px solid white;
+        margin-bottom: 20px;
+}
+.slider{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    border-bottom: 2px dotted white;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.buttonx{
+    color: white;
+    background-color: transparent;
+    border: 0;
+
+}
+.gre{
+    color: green;
+}
+.re{
+    color: red;
+}

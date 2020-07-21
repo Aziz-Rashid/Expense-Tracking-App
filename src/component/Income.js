@@ -11,16 +11,17 @@ export default function Income() {
     return (
         <div className="income">
             <FlipMove duration={800} easing="ease-in-out">
+
+            <hr />
             <div>
-                <h1 className="inc">Income:</h1>
-                <p className="size"><span className="sp">$+</span><Countup start={0} end={income} duration={2.75} /></p>
-            </div>
-            <br />
-            <div>
-                <h1 className="exp">Expense:</h1>
-                <p className="size"><span className="sp">$-</span><Countup start={0} end={expense} duration={2.75} /></p>
                 
+                <p className="inc">Income: <span><span className={income > 0 ? 'greens':null}>$+</span><Countup start={0} end={income} duration={2.75} /></span></p>
             </div>
+            <hr />
+            <div>
+                <p className="exp">Expense: <span ><span className="reds">$-</span><Countup start={0} end={expense} duration={2.75} /></span></p>
+                
+                </div>
             </FlipMove>
         </div>
     )

@@ -10,6 +10,7 @@ import './App.css'
 export default function App() {
   
   return (
+    <div className="back">
     <GlobalProvider>
       <Header />
       <Totalbalance />
@@ -17,5 +18,6 @@ export default function App() {
       <History />
       <Newtransaction />
     </GlobalProvider>
+    </div>
   )
 }

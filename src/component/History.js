@@ -7,16 +7,14 @@ export default function History() {
     const {transactions} = useContext(GlobalContext)
     const {deletetransitions} = useContext(GlobalContext)
     return (
-        <div className="q">
-            <p className="para">History</p>
-            
+        <div>
+            <p className="transaction-historyy">Transaction History</p>
             <FlipMove duration={800} easing="ease-in-out">
             {transactions.map((transaction,id) =>(
-                <div key={id} className="history">
-                   
-                   <div> <p className="his" id="a" >{transaction.text}</p></div>
-                   <div> <p className="his new"> ${Math.abs(transaction.amount)}</p></div>
-                   <div> <button className="btn" onClick={(clickhandler) => deletetransitions(transaction.id)}>x</button></div>
+                <div key={id} className="slider">
+                   <div> <p className={transaction.amount > 0 ? 'gre':'re'}>{transaction.text}</p></div>
+                   <div><p> ${Math.abs(transaction.amount)}</p></div>
+                   <div> <button className="buttonx"  onClick={(clickhandler) => deletetransitions(transaction.id)}>X</button></div>
                     
                 </div>
             ))}
